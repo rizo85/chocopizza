@@ -1,0 +1,80 @@
+*{
+  text-align: center;
+}
+
+html{
+  color: #969696;
+  text-align: center;
+  margin-left: 10%;
+  margin-left: 10%;
+}
+
+#wrapperDiv {
+  text-align: center;
+  background-color: white;
+  width: 80%;
+}
+
+nav{
+  background-color: #444444;
+  height: 100px;
+  width: auto;
+  margin-bottom: 30px;
+}
+
+#logo{
+  background-color: #000000;
+  width: 200px;
+  height: 70px;
+  color: #969696;
+  float: left;
+}
+
+.navItem{
+  float: left;
+}
+
+#heroImage{
+height: 450px;
+width: 900px;
+background-color:  #000000;
+margin-bottom: 30px;
+}
+
+.subBanner{
+
+  background-color: #000000;;
+margin-bottom: 30px;
+height: 300px;
+width: 375px;
+float: left;
+}
+
+#featureSecBan{
+  background-color:  #000000;;
+  width: 50%;
+  height: 480px;
+  float: left;
+}
+
+#featureTextBox{
+  width: 50%;
+  height: 480px;
+  float: left;
+  overflow-y: scroll;
+  margin-bottom: 30px;
+}
+
+#featureSexHeading{
+  text-align: center;
+}
+
+main{
+  margin-bottom: 30px;
+}
+
+#bottomDiv{
+  width: 100%;
+  height: 200px;
+  background-color: #444444;
+}
