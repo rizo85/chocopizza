@@ -231,9 +231,18 @@ footer{
 
 #footerDiv1{
   height: 10vh;
+  margin-bottom: 120px;
 }
+
 #footerDiv2{
   height: 10vh;
+  margin-bottom: 20px;
+}
+#footerDiv3{
+  height: 10vh;
+  margin-bottom: 60px;
+  text-align: center;
+  font-weight: lighter;
 }
 
 #nessa{
@@ -246,6 +255,60 @@ footer{
   -o-background-size: cover;
   background-size: cover;
   margin: 30px;
-
+  border-radius: 71px;
+}
+#nessa2{
+  background-color: grey;
+  height: 71px;
+  width: 430px;
+  float: left;
+  margin-top: 30px;
 
 }
+
+#nessa2Head{
+  
+  font-size: large;
+  font-weight: bold;
+
+}
+
+#nessaText{
+  background-color: khaki;
+}
+
+#nessaButton{
+  background-color: #bc7058;
+  height: 71px;
+  width: 272px;
+  margin-top: 30px;
+  float: right;
+  text-align: center;
+  color: white;
+  line-height: 71px;
+}
+
+.smallFooter{
+  height: 32px;
+  margin-top: 16px;
+  width: 47%;
+  float: left;
+
+}
+
+#smallLogo{
+  width: 4%;
+  height: 31px;
+  margin-left: 1%;
+  margin-right: 1%;
+  float: left;
+  background: url(../img/small-logo.png) no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+
+
