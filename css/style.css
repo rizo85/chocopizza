@@ -1,17 +1,64 @@
-@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Yellowtail&display=swap');*{
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+
+
+*{
   margin: 0
  }
  
+body{
+  font-family: 'Droid Serif', serif;
+  line-height: 1.6em;
+  color: #444;
+
+}
+
+
  html
  {
   background-color: white;
 }
+
+
 #wrapperDiv{
   width: 80vw;
   margin-left: 10vw;
   margin-right: 10vw;
  
+}
+
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  color: #111;
+}
+
+.meta {
+  font-family: 'Abel', sans-serif;
+  font-size: 0.9rem;
+  color: #888;
+  text-transform: uppercase;
+
+  margin-bottom: 2px;
+}
+
+#print {
+  float: right;
+  display: inline;
+  margin-top: -29px;
+  padding: 0;
 }
 
 header{
@@ -22,11 +69,11 @@ header{
 
 #logoHolder{
   margin-top: 8px;
-  height: 42px;
-  width: 45px;
+  height: 48px;
+  width: 215px;
   background-color: #333333;
   float: left;
-  background: url(../img/logo.png) no-repeat center center; 
+  background: url(../img/actuallogo.png) no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -117,35 +164,37 @@ header{
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover;  
+}
 
-}#bottomBorder{
+
+
+.decor {
   width: 100%;
-  height: 15px;
+  content: url('../img/decor.png');
+  width: 100%;
+  padding-top: 18px;
+  padding-bottom: 15px;
   margin-top: 80px;
   position: absolute;
-  background-image: url("../img/hr-img.png");
-  background-repeat: repeat repeat;
+overflow: hidden;
 }
 /* begining of main styles */
 
 
 main{
+margin-top: 30px;
 
 }
 
 #mainLayer1{
 
-height: 20vh;
 width: 100%;
 position: relative;
+margin-bottom: 20px;
 }
 
-#layer1Text{
-position: absolute;
-left: 0;
-bottom: 0;
-}
+
 
 
 #printerDiv{
@@ -162,8 +211,14 @@ bottom: 0;
   bottom: 0;
 }
 
+#print::before {
+  margin: 0 3px;
+  margin-top: 2px;
+  content: url('../img/printer.png');
+}
+
+
 #mainLayer2{
-  background-color: rgb(255, 0, 221);
   height: 600px;
   width: 100%;
   background: url(../img/choco-pizza.png) no-repeat center center; 
@@ -175,33 +230,77 @@ bottom: 0;
 
 }
 
-#mainLayer3{
-  height: 20vh;
-  width: 100%;
 
+
+ul{
+-moz-column-count: 2;
+-moz-column-gap: 20px;
+-webkit-column-count: 2;
+-webkit-column-gap: 20px;
+column-count: 2;
+column-gap: 20px;
+
+}
+.ingredients{
+  padding: 38px 12% 40px 16%;  
+  font-family: 'Patrick Hand', cursive;
+   font-size: 1.2rem;
+   line-height: 1.65;
+}
+
+.ingredients li {
+  display: inline-block; 
+  list-style: none;
+  width: 400px;
+  cursor: pointer;
+}
+
+.ingredients li::before {
+  margin: 0 10px;
+  content: url('../img/box-unchecked.png');
+}
+
+.checked {
+  text-decoration: line-through;
+}
+
+.ingredients li.checked::before {
+  margin: 0 10px;
+  content: url('../img/box-checked.png');
+}
+
+#lowestDeco{
+
+}
+
+#lowerDeco{
+  width: 100%;
+content: url('../img/decor.png');
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  margin-top: 0px;
+
+overflow: hidden;
+
+}
+
+#mainLayer3{
+  width: 100%;
+margin-bottom: 20px;
 }
 
 .layered{
+    text-indent: 32px;
+    padding-top: 8px;
+    padding-bottom: 3px;
+ }
 
-  color: #805e58;
-  font-family: 'Roboto', sans-serif;
-line-height: 15px;
-}
 
 #mainLayer4{
-  padding-top: 10px;
-  background-color: rgb(68, 0, 255);
-  height: 20vh;
-  width: 100%;
-  background: url(../img/list-bg.png) no-repeat; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
- 
- margin-bottom: 50px;
-  position: relative;
-
+  background: url('../img/list-bg.png') no-repeat; 
+  background-size:100% 100%;
+  margin-bottom: 10px;
 }
 
 .list{
@@ -231,18 +330,19 @@ footer{
 
 #footerDiv1{
   height: 10vh;
-  margin-bottom: 120px;
+  margin-bottom: 70px;
 }
 
 #footerDiv2{
-  height: 10vh;
-  margin-bottom: 20px;
+  height: 7vh;
+  margin-bottom: 0px;
 }
 #footerDiv3{
   height: 10vh;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   text-align: center;
   font-weight: lighter;
+  opacity: 0.5;
 }
 
 #nessa{
@@ -254,38 +354,40 @@ footer{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  margin: 30px;
+  margin: 10px;
   border-radius: 71px;
 }
 #nessa2{
-  background-color: grey;
   height: 71px;
-  width: 430px;
   float: left;
-  margin-top: 30px;
-
+  margin-top: 10px;
+width: 60%;
 }
 
 #nessa2Head{
-  
   font-size: large;
   font-weight: bold;
-
+margin-bottom: -15px;
 }
 
-#nessaText{
-  background-color: khaki;
+#nessa2Text{
+  margin-top: -14px;
 }
 
 #nessaButton{
-  background-color: #bc7058;
-  height: 71px;
-  width: 272px;
-  margin-top: 30px;
+  display: inline-block;
   float: right;
-  text-align: center;
+  width: 20%;
+  height: 55px;
+  background-color: #bb7056;
+  font-family: 'Abel';
+  font-size: 1.25rem;
   color: white;
-  line-height: 71px;
+  line-height: 3.5rem;
+  text-transform: uppercase;      
+  text-align: center;
+  margin-top: 10px;
+  cursor: pointer;
 }
 
 .smallFooter{
@@ -293,8 +395,10 @@ footer{
   margin-top: 16px;
   width: 47%;
   float: left;
-
+  opacity: 0.5;
 }
+
+
 
 #smallLogo{
   width: 4%;
@@ -303,10 +407,10 @@ footer{
   margin-right: 1%;
   float: left;
   background: url(../img/small-logo.png) no-repeat center center; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+
+background-size: 30px 30px;
+
+
 }
 
 
